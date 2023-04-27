@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 import * as Style from "./styles";
@@ -16,12 +15,7 @@ const activeItemStyles = {
 };
 
 export function BottomNavigation() {
-  const [activeItem, setActiveItem] = useState("home");
-
-  useEffect(() => {
-    // volta a cor original da home sempre que o usuário mudar de página
-    setActiveItem("home");
-  }, []);
+ 
 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background">
