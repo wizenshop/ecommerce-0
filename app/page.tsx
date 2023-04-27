@@ -2,6 +2,9 @@ import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
+import { DesktopMenu } from "@/components/header/DesktopMenu"
+
+
 
 export default function IndexPage() {
   return (
@@ -25,6 +28,7 @@ export default function IndexPage() {
         >
           Documentation
         </Link>
+        
         <Link
           target="_blank"
           rel="noreferrer"
